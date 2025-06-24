@@ -8,28 +8,35 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-image: url('D01C9EA7-DD98-44EE-8F7D-3EB449449EB4.png');
+      background: url('IMG_6010.jpeg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      animation: fadeBackground 15s ease-in-out infinite alternate;
       color: #f2f2f2;
       text-align: center;
     }
 
+    @keyframes fadeBackground {
+      0% {
+        filter: brightness(0.75) saturate(0.9);
+      }
+      100% {
+        filter: brightness(1.05) saturate(1.2);
+      }
+    }
+
     header {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 40px 20px 20px;
     }
 
     header img {
-      width: 160px;
+      width: 140px;
       border-radius: 50%;
       border: 2px solid #fff;
-      margin-top: 20px;
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2.4em;
       margin: 20px 0 10px;
       color: #f0e4c0;
     }
@@ -51,7 +58,7 @@
       display: block;
       margin: 15px auto;
       padding: 14px 25px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.6);
       color: #f2f2f2;
       border: 1px solid #f0e4c0;
       border-radius: 40px;
@@ -69,7 +76,6 @@
       padding: 20px;
       font-size: 0.9em;
       color: #aaa;
-      background-color: rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
@@ -82,11 +88,11 @@
   </header>
 
   <main>
-    <a class="btn" href="https://wa.me/5521975003419?text=Olá,%20desejo%20agendar%20uma%20Consulta%20Oracular.">Consulta Oracular</a>
-    <a class="btn" href="https://wa.me/5521975003419?text=Olá,%20gostaria%20de%20receber%20uma%20Mensagem%20Canalizada.">Canalizações</a>
-    <a class="btn" href="https://wa.me/5521975003419?text=Oi,%20tenho%20interesse%20em%20realizar%20um%20Ritual%20ou%20Magia.">Rituais e Magias</a>
-    <a class="btn" href="https://wa.me/5521975003419?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Mentoria%20Espiritual.">Mentoria Espiritual</a>
-    <a class="btn" href="https://wa.me/5521975003419?text=Oi,%20quero%20solicitar%20um%20Mapa%20Astrológico%20ou%20Numerológico.">Mapas Astrológicos e Numerológicos</a>
+    <a class="btn" href="https://wa.me/5521975003419?text=Quero%20agendar%20uma%20consulta%20oracular.">Consulta Oracular</a>
+    <a class="btn" href="https://wa.me/5521975003419?text=Gostaria%20de%20uma%20mensagem%20canalizada.">Canalizações</a>
+    <a class="btn" href="https://wa.me/5521975003419?text=Tenho%20interesse%20em%20um%20ritual%20ou%20magia.">Rituais e Magias</a>
+    <a class="btn" href="https://wa.me/5521975003419?text=Quero%20participar%20da%20Mentoria%20Espiritual.">Mentoria Espiritual</a>
+    <a class="btn" href="https://wa.me/5521975003419?text=Gostaria%20de%20um%20mapa%20astrológico%20ou%20numerológico.">Mapas Astrológicos e Numerológicos</a>
   </main>
 
   <footer>
