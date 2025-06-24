@@ -6,14 +6,26 @@
   <title>Vozz do Oráculo | Rari Favaro</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background: url('IMG_6010.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      animation: fadeBackground 15s ease-in-out infinite alternate;
-      color: #f2f2f2;
-      text-align: center;
-    }
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: url('IMG_6010.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f2f2f2;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+  z-index: -1;
+}
 
     @keyframes fadeBackground {
       0% {
